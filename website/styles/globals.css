@@ -1,0 +1,4 @@
+@tailwind base;
+@import './tokens.css';
+@tailwind components;
+@tailwind utilities;

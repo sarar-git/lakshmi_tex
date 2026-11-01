@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+
+# Environment variables (never commit real secrets)
+.env
+.env.local
+.env.*.local
+
+# Payload data exports (if ever added)
+payload-data/
+
+# IDE / editor temp files
+.vscode/
+.idea/
+*.swp
+*.lock
+
+# OS generated
+.DS_Store
