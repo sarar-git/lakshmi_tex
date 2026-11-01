@@ -10,8 +10,8 @@ Update the status and dates here as work moves, and tick the checklist items as 
 | B1 Foundation | Done | 1 Nov 2026 |  | Scaffolded Next.js + Tailwind, Payload CMS placeholder, CI, .env.example |
 | B2 Design system | Done | 2 Nov 2026 |  | Design tokens, core components (Button, Card, Section, Hero, LogoStrip), styleguide page |
 | B3 Data model and CMS | Done | 3 Nov 2026 |  | Payload CMS config + 10 collections (Products, Schools, Case Studies, Testimonials, FAQs, Certifications, Region/City, Blog Posts, Leads, Site Settings). Roles: admin, content editor, sales. Draft/published states. Seed script placeholder added. |
-| B4 Public pages | In progress | 3 Nov 2026 |  | Home page built with design tokens and core components (Hero, LogoStrip, Card, Section); static build passes |
-| B5 Lead capture | Not started |  |  |  |  |
+| B4 Public pages | Done | 3 Nov 2026 |  | Home page built with design tokens and core components; Vercel preview deployed and visible |
+| B5 Lead capture | In progress |  |  |  |  |
 | B6 SEO and performance | Not started |  |  |  |  |
 | B7 Tracking and consent | Not started |  |  |  |  |
 | B8 Content and QA | Not started |  |  |  |  |
