@@ -1,9 +1,10 @@
-// client-side only thank-you page – uses window.location.query
-export const dynamic = "force-dynamic";
+'use client';
+
+import { useSearchParams } from "next/navigation";
 
 export default function SampleKitThankYou() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const leadId = urlParams.get("lead");
+  const params = useSearchParams();
+  const leadId = params.get("lead");
   return (
     <main className="min-h-screen flex items-center justify-center bg-bg-light">
       <section className="py-12 text-center">
