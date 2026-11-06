@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" role="img" aria-label="School Sportswear logo">
+  <rect x="2" y="2" width="36" height="36" rx="10" fill="#245D32"/>
+  <path d="M12 13h4.5v9.5H26V27H12z" fill="#D2EF50"/>
+  <circle cx="27" cy="14" r="3" fill="#D2EF50"/>
+</svg>

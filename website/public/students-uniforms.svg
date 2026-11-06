@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Students wearing coordinated school sports uniforms">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F6E3E"/>
+      <stop offset="1" stop-color="#164A2A"/>
+    </linearGradient>
+    <linearGradient id="jersey" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EDEFEE"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- soft light -->
+  <circle cx="640" cy="120" r="220" fill="#FFFFFF" opacity="0.06"/>
+  <circle cx="140" cy="500" r="180" fill="#D2EF50" opacity="0.08"/>
+  <!-- three students in coordinated kit -->
+  <g>
+    <!-- student 1 -->
+    <g transform="translate(120,150)">
+      <circle cx="70" cy="30" r="26" fill="#F2C9A0"/>
+      <path d="M44 24a26 26 0 0 1 52 0v6H44z" fill="#2C2318"/>
+      <path d="M70 62c-30 0-52 16-56 46l-8 70h44l6-40h28l6 40h44l-8-70c-4-30-26-46-56-46z" fill="url(#jersey)"/>
+      <path d="M46 84h48" stroke="#245D32" stroke-width="6" stroke-linecap="round"/>
+      <text x="70" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#245D32">12</text>
+      <path d="M38 178h26v96H30l8-40zM102 178H76v96h34l-8-40z" fill="#242044"/>
+      <rect x="30" y="272" width="34" height="14" rx="6" fill="#D2EF50"/>
+      <rect x="76" y="272" width="34" height="14" rx="6" fill="#D2EF50"/>
+    </g>
+    <!-- student 2 (centre, slightly larger) -->
+    <g transform="translate(320,110)">
+      <circle cx="80" cy="34" r="30" fill="#E8B48C"/>
+      <path d="M50 28a30 30 0 0 1 60 0v8H50z" fill="#1E1A14"/>
+      <path d="M80 70c-34 0-58 18-62 52l-10 82h50l6-46h32l6 46h50l-10-82c-4-34-28-52-62-52z" fill="url(#jersey)"/>
+      <path d="M52 96h56" stroke="#D2EF50" stroke-width="7" stroke-linecap="round"/>
+      <text x="80" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#245D32">7</text>
+      <path d="M44 196h30v110H34l10-46zM116 196H86v110h40l-10-46z" fill="#242044"/>
+      <rect x="34" y="304" width="40" height="16" rx="7" fill="#D2EF50"/>
+      <rect x="86" y="304" width="40" height="16" rx="7" fill="#D2EF50"/>
+    </g>
+    <!-- student 3 -->
+    <g transform="translate(540,155)">
+      <circle cx="70" cy="30" r="26" fill="#D9A177"/>
+      <path d="M44 26a26 26 0 0 1 52 0v4H44z" fill="#2C2318"/>
+      <path d="M70 62c-30 0-52 16-56 46l-8 70h44l6-40h28l6 40h44l-8-70c-4-30-26-46-56-46z" fill="url(#jersey)"/>
+      <path d="M46 84h48" stroke="#245D32" stroke-width="6" stroke-linecap="round"/>
+      <text x="70" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#245D32">23</text>
+      <path d="M38 178h26v96H30l8-40zM102 178H76v96h34l-8-40z" fill="#242044"/>
+      <rect x="30" y="272" width="34" height="14" rx="6" fill="#D2EF50"/>
+      <rect x="76" y="272" width="34" height="14" rx="6" fill="#D2EF50"/>
+    </g>
+  </g>
+  <rect x="0" y="540" width="800" height="60" fill="#000000" opacity="0.18"/>
+  <text x="400" y="578" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#FFFFFF" opacity="0.9">Coordinated school sports uniforms</text>
+</svg>
