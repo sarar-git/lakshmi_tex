@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 // ============================================================
 // Premium Sample Request Page – Superly-inspired composition
@@ -12,10 +13,16 @@ const labelClass =
   "block text-[12px] font-medium tracking-wide text-navy/70 mb-1";
 
 export default function RequestSampleKit() {
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Product identifier passed from the catalogue (read-only display only —
+  // form fields, validation and the API payload are unchanged).
+  const requestedProduct =
+    typeof router.query.product === "string" ? router.query.product : null;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -182,6 +189,19 @@ export default function RequestSampleKit() {
               Tell us what your institution needs. We&apos;ll help you explore
               the right fabrics, designs and customisation options.
             </p>
+
+            {/* Read-only acknowledgement of the product passed from /products */}
+            {requestedProduct && (
+              <p
+                className="mt-6 inline-block rounded-full bg-lime/20 px-4 py-2 text-[13px] font-medium text-navy"
+                role="status"
+              >
+                Sample request for:{" "}
+                <span className="font-semibold">
+                  {requestedProduct.replace(/-/g, " ")}
+                </span>
+              </p>
+            )}
 
             <hr className="mt-10 border-t border-light" />
 

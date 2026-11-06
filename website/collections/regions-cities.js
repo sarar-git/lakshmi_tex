@@ -1,4 +1,4 @@
-const { mongoose } = require('../payload/config');
+const mongoose = require('mongoose');
 
 const RegionCitySchema = new mongoose.Schema({
   region: {

@@ -21,6 +21,12 @@ module.exports = {
         },
         navy: "#242044",
         light: "#D6D5D9",
+        // Editorial poster palette (products catalogue)
+        steel: "#8999A8",
+        mist: "#DCE4EB",
+        ink: "#172333",
+        graphite: "#687989",
+        haze: "#E4EAEF",
         // Original site tokens
         primary: {
           DEFAULT: "#0579eb",

@@ -1,4 +1,4 @@
-const { mongoose } = require('../payload/config');
+const mongoose = require('mongoose');
 
 const CaseStudySchema = new mongoose.Schema({
   title: { type: String, required: true },

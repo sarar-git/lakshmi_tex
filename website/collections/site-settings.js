@@ -1,4 +1,4 @@
-const { mongoose } = require('../payload/config');
+const mongoose = require('mongoose');
 
 const SiteSettingsSchema = new mongoose.Schema({
   siteName: { type: String, default: 'School Sportswear Manufacturer' },

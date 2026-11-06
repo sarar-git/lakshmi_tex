@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Placeholder illustration: group of students wearing coordinated school sportswear">
+  <title>Placeholder illustration — students in coordinated sportswear</title>
+  <desc>Placeholder artwork for the catalogue hero. Replace with a real group photograph via the CMS media library.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DCE4EB"/>
+      <stop offset="1" stop-color="#B9C6D2"/>
+    </linearGradient>
+    <pattern id="track" width="120" height="60" patternUnits="userSpaceOnUse">
+      <rect width="120" height="60" fill="#8999A8"/>
+      <rect y="54" width="120" height="6" fill="#DCE4EB" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <rect y="560" width="1200" height="240" fill="url(#track)"/>
+  <path d="M0 640 Q600 600 1200 640" stroke="#DCE4EB" stroke-width="8" fill="none" opacity="0.7"/>
+  <path d="M0 720 Q600 680 1200 720" stroke="#DCE4EB" stroke-width="8" fill="none" opacity="0.7"/>
+
+  <!-- Back row -->
+  <g>
+    <ellipse cx="240" cy="770" rx="130" ry="16" fill="#172333" opacity="0.15"/>
+    <circle cx="240" cy="300" r="46" fill="#2A3546"/>
+    <path d="M198 290 Q204 246 240 244 Q278 246 282 290 Q268 272 240 272 Q212 272 198 290 Z" fill="#0D1520"/>
+    <path d="M186 356 Q240 380 294 356 L338 380 L322 452 L302 442 L302 640 L178 640 L178 442 L158 452 L142 380 Z" fill="#172333"/>
+    <path d="M186 356 Q240 380 294 356 L314 368 L300 400 Q240 420 180 400 L166 368 Z" fill="#8999A8" opacity="0.85"/>
+    <path d="M214 470 L266 470 L266 640 L214 640 Z" fill="#687989"/>
+    <path d="M178 640 L302 640 L302 700 L268 700 L264 770 L236 770 L232 700 L216 700 L212 770 L184 770 L178 700 Z" fill="#172333"/>
+    <path d="M172 766 L240 766 L240 790 L166 790 Z" fill="#0D1520"/>
+    <path d="M232 766 L300 766 L306 790 L232 790 Z" fill="#0D1520"/>
+  </g>
+
+  <g>
+    <ellipse cx="600" cy="770" rx="130" ry="16" fill="#172333" opacity="0.15"/>
+    <circle cx="600" cy="292" r="46" fill="#2A3546"/>
+    <path d="M558 284 Q564 240 600 238 Q638 240 642 284 Q628 264 600 264 Q572 264 558 284 Z" fill="#0D1520"/>
+    <path d="M546 348 Q600 372 654 348 L698 372 L682 444 L662 434 L662 632 L538 632 L538 434 L518 444 L502 372 Z" fill="#172333"/>
+    <path d="M546 348 Q600 372 654 348 L674 360 L660 392 Q600 412 540 392 L526 360 Z" fill="#D2EF50" opacity="0.9"/>
+    <path d="M574 462 L626 462 L626 632 L574 632 Z" fill="#687989"/>
+    <path d="M538 632 L662 632 L662 692 L628 692 L624 762 L596 762 L592 692 L576 692 L572 762 L544 762 L538 692 Z" fill="#172333"/>
+    <path d="M532 758 L600 758 L600 782 L526 782 Z" fill="#0D1520"/>
+    <path d="M592 758 L660 758 L666 782 L592 782 Z" fill="#0D1520"/>
+  </g>
+
+  <g>
+    <ellipse cx="960" cy="770" rx="130" ry="16" fill="#172333" opacity="0.15"/>
+    <circle cx="960" cy="300" r="46" fill="#2A3546"/>
+    <path d="M918 292 Q924 248 960 246 Q998 248 1002 292 Q988 272 960 272 Q932 272 918 292 Z" fill="#0D1520"/>
+    <path d="M906 356 Q960 380 1014 356 L1058 380 L1042 452 L1022 442 L1022 640 L898 640 L898 442 L878 452 L862 380 Z" fill="#172333"/>
+    <path d="M906 356 Q960 380 1014 356 L1034 368 L1020 400 Q960 420 900 400 L886 368 Z" fill="#8999A8" opacity="0.85"/>
+    <path d="M934 470 L986 470 L986 640 L934 640 Z" fill="#687989"/>
+    <path d="M898 640 L1022 640 L1022 700 L988 700 L984 770 L956 770 L952 700 L936 700 L932 770 L904 770 L898 700 Z" fill="#172333"/>
+    <path d="M892 766 L960 766 L960 790 L886 790 Z" fill="#0D1520"/>
+    <path d="M952 766 L1020 766 L1026 790 L952 790 Z" fill="#0D1520"/>
+  </g>
+
+  <!-- Front row -->
+  <g>
+    <ellipse cx="420" cy="790" rx="150" ry="18" fill="#172333" opacity="0.18"/>
+    <circle cx="420" cy="360" r="54" fill="#2A3546"/>
+    <path d="M370 350 Q378 300 420 298 Q464 300 470 350 Q454 330 420 330 Q386 330 370 350 Z" fill="#0D1520"/>
+    <path d="M356 424 Q420 452 484 424 L536 452 L516 538 L492 526 L492 730 L348 730 L348 526 L324 538 L304 452 Z" fill="#8999A8"/>
+    <path d="M420 452 L420 730" stroke="#172333" stroke-width="8" opacity="0.5"/>
+    <path d="M356 424 Q420 452 484 424 L506 438 L490 474 Q420 498 350 474 L334 438 Z" fill="#172333"/>
+    <path d="M386 560 L454 560 L454 730 L386 730 Z" fill="#172333"/>
+    <path d="M348 730 L492 730 L492 796 L452 796 L448 880 L424 880 L420 800 L416 880 L392 880 L388 796 L348 796 Z" fill="#172333"/>
+    <path d="M342 876 L420 876 L420 902 L334 902 Z" fill="#0D1520"/>
+    <path d="M416 876 L496 876 L502 902 L416 902 Z" fill="#0D1520"/>
+  </g>
+
+  <g>
+    <ellipse cx="790" cy="790" rx="150" ry="18" fill="#172333" opacity="0.18"/>
+    <circle cx="790" cy="368" r="54" fill="#2A3546"/>
+    <path d="M740 358 Q748 308 790 306 Q834 308 840 358 Q824 338 790 338 Q756 338 740 358 Z" fill="#0D1520"/>
+    <path d="M726 432 Q790 460 854 432 L906 460 L886 546 L862 534 L862 738 L718 738 L718 534 L694 546 L674 460 Z" fill="#172333"/>
+    <path d="M790 460 L790 738" stroke="#8999A8" stroke-width="8" opacity="0.8"/>
+    <path d="M726 432 Q790 460 854 432 L876 446 L860 482 Q790 506 720 482 L704 446 Z" fill="#8999A8"/>
+    <path d="M756 568 L824 568 L824 738 L756 738 Z" fill="#687989"/>
+    <path d="M718 738 L862 738 L862 804 L822 804 L818 888 L794 888 L790 808 L786 888 L762 888 L758 804 L718 804 Z" fill="#172333"/>
+    <path d="M712 884 L790 884 L790 910 L704 910 Z" fill="#0D1520"/>
+    <path d="M786 884 L866 884 L872 910 L786 910 Z" fill="#0D1520"/>
+  </g>
+</svg>

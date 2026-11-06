@@ -1,4 +1,4 @@
-const { mongoose } = require('../payload/config');
+const mongoose = require('mongoose');
 
 const LeadSchema = new mongoose.Schema({
   formType: {

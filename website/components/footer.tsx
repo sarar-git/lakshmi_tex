@@ -64,7 +64,9 @@ export function Footer() {
               <a href="tel:+918012345678">+91 80‑1234‑5678</a>
             </li>
             <li>
-              <a href="mailto:info@schoolsportswear.com">info@schoolsportswear.com</a>
+              <a href="mailto:info@schoolsportswear.com" className="break-all">
+                info@schoolsportswear.com
+              </a>
             </li>
             <li>
               <a href="https://wa.me/918012345678">WhatsApp</a>
