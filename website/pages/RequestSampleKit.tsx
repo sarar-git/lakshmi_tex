@@ -201,9 +201,9 @@ export default function RequestSampleKit() {
           <input type="hidden" name="city" value="" />
           <input type="hidden" name="board" value="" />
 
-          <Button disabled={loading} className="w-full">
+          <button type="submit" disabled={loading} className="w-full">
             {loading ? "Sending…" : "Request Sample Kit"}
-          </Button>
+          </button>
 
           {error && (
             <p className="mt-2 text-red-600 text-sm">{error}</p>
