@@ -1,4 +1,10 @@
 :root {
+  --color-forest: #245D32;
+  --color-deep: #164A2A;
+  --color-lime: #D2EF50;
+  --color-navy: #242044;
+  --color-white: #FFFFFF;
+  --color-light-grey: #D6D5D9;
   --color-primary: #0579eb;
   --color-primary-dark: #0259b8;
   --color-secondary: #1a1a1a;
@@ -16,6 +22,8 @@
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.5rem;
   --font-size-3xl: 2rem;
+  --font-size-4xl: 3rem;
+  --font-size-5xl: 4rem;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
