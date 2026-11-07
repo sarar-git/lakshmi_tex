@@ -88,17 +88,17 @@ export default function ProductsCatalogue({ products }: ProductsCatalogueProps) 
         {/* Oversized decorative typography (behind content, hidden from AT) */}
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute -right-6 bottom-[-3.5rem] select-none text-[9rem] font-extrabold leading-none tracking-[-0.06em] text-ink/[0.06] sm:text-[13rem] lg:bottom-[-5rem] lg:text-[18rem]"
+          className="pointer-events-none absolute -right-6 bottom-[-3.5rem] select-none text-[9rem] font-cormorant font-semibold leading-none tracking-[-0.06em] text-ink/[0.06] sm:text-[13rem] lg:bottom-[-5rem] lg:text-[18rem]"
         >
           TEAM
         </span>
 
         <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-end gap-10 px-6 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
           <div className="animate-panel-in">
-            <p className="text-[11px] font-extrabold uppercase tracking-[0.28em] text-graphite">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-graphite">
               Product Catalogue
             </p>
-            <h1 className="mt-4 text-[2.6rem] font-extrabold uppercase leading-[0.95] tracking-[-0.03em] text-ink sm:text-6xl lg:text-[4.5rem]">
+            <h1 className="mt-4 font-cormorant text-[2.8rem] font-semibold uppercase leading-[0.98] tracking-[0.01em] text-ink sm:text-6xl lg:text-[4.75rem]">
               Sportswear that
               <br />
               defines your
@@ -112,13 +112,13 @@ export default function ProductsCatalogue({ products }: ProductsCatalogueProps) 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="/request-sample-kit"
-                className="inline-flex items-center justify-center bg-ink px-6 py-3.5 text-xs font-extrabold tracking-[0.16em] text-white transition-colors hover:bg-graphite focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-mist"
+                className="inline-flex items-center justify-center bg-ink px-6 py-3.5 text-[11px] font-bold tracking-[0.2em] text-white transition-colors hover:bg-graphite focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-mist"
               >
                 REQUEST A SAMPLE
               </a>
               <a
                 href="#catalogue"
-                className="inline-flex items-center justify-center border border-ink/40 px-6 py-3.5 text-xs font-extrabold tracking-[0.16em] text-ink transition-colors hover:bg-ink hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-mist"
+                className="inline-flex items-center justify-center border border-ink/40 px-6 py-3.5 text-[11px] font-bold tracking-[0.2em] text-ink transition-colors hover:bg-ink hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-mist"
               >
                 BROWSE CATALOGUE
               </a>
@@ -144,7 +144,7 @@ export default function ProductsCatalogue({ products }: ProductsCatalogueProps) 
                 <span className="h-4 w-4 rounded-full bg-steel" />
                 <span className="h-4 w-4 rounded-full border border-ink/20 bg-white" />
               </span>
-              <span className="text-[10px] font-extrabold uppercase tracking-[0.18em] text-graphite">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-graphite">
                 Your school colours
               </span>
             </div>
@@ -171,7 +171,7 @@ export default function ProductsCatalogue({ products }: ProductsCatalogueProps) 
                 type="button"
                 onClick={() => selectCategory(cat)}
                 aria-current={isActive ? "true" : undefined}
-                className={`shrink-0 whitespace-nowrap px-4 py-2 text-[11px] font-extrabold uppercase tracking-[0.16em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 ${
+                className={`shrink-0 whitespace-nowrap px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 ${
                   isActive
                     ? "bg-ink text-white"
                     : "border border-ink/25 text-graphite hover:border-ink hover:text-ink"
@@ -187,7 +187,7 @@ export default function ProductsCatalogue({ products }: ProductsCatalogueProps) 
       {/* Active category intro copy (Plan §4.4) */}
       <div className="mx-auto max-w-7xl px-6 pb-2 pt-8">
         <p className="max-w-3xl text-sm leading-relaxed text-graphite">
-          <span className="font-extrabold uppercase tracking-[0.14em] text-ink">
+          <span className="font-semibold uppercase tracking-[0.16em] text-ink">
             {active === ALL ? "All products" : CATEGORY_COPY[active as ProductCategory].label}
             {" — "}
           </span>
@@ -223,12 +223,12 @@ export default function ProductsCatalogue({ products }: ProductsCatalogueProps) 
       <section className="relative overflow-hidden bg-ink">
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute -left-4 top-2 select-none text-[8rem] font-extrabold leading-none tracking-[-0.06em] text-white/[0.05] sm:text-[11rem] lg:-left-6 lg:text-[15rem]"
+          className="pointer-events-none absolute -left-4 top-2 select-none text-[8rem] font-cormorant font-semibold leading-none tracking-[-0.06em] text-white/[0.05] sm:text-[11rem] lg:-left-6 lg:text-[15rem]"
         >
           YOURS
         </span>
         <div className="relative mx-auto max-w-7xl px-6 py-20 text-center lg:py-28">
-          <h2 className="mx-auto max-w-4xl text-[2.2rem] font-extrabold uppercase leading-[1] tracking-[-0.03em] text-white sm:text-5xl lg:text-[3.75rem]">
+          <h2 className="mx-auto max-w-4xl font-cormorant text-[2.4rem] font-semibold uppercase leading-[1.02] tracking-[0.01em] text-white sm:text-5xl lg:text-[4rem]">
             Your school. Your colours. Your identity.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-mist/80">
@@ -238,13 +238,13 @@ export default function ProductsCatalogue({ products }: ProductsCatalogueProps) 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <a
               href="/request-sample-kit"
-              className="inline-flex items-center justify-center bg-white px-7 py-4 text-xs font-extrabold tracking-[0.16em] text-ink transition-colors hover:bg-mist focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
+              className="inline-flex items-center justify-center bg-white px-7 py-4 text-[11px] font-bold tracking-[0.2em] text-ink transition-colors hover:bg-mist focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
             >
               REQUEST A SAMPLE
             </a>
             <a
               href="/request-sample-kit?intent=bulk"
-              className="inline-flex items-center justify-center border border-white/60 px-7 py-4 text-xs font-extrabold tracking-[0.16em] text-white transition-colors hover:bg-white hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
+              className="inline-flex items-center justify-center border border-white/60 px-7 py-4 text-[11px] font-bold tracking-[0.2em] text-white transition-colors hover:bg-white hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
             >
               DISCUSS BULK REQUIREMENTS
             </a>

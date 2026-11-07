@@ -564,3 +564,56 @@ Costs vary widely; plan for these categories:
 | Slow mobile site | Optimise images and test performance throughout the build |
 | Ad account suspension or policy issues | Keep claims accurate, avoid child-targeting, keep policies and landing pages compliant |
 | Over-building at launch | Launch the marketing site first; add the studio and portal in Phase 6 |
+
+## 5. Editorial Redesign (November 2026) - Implementation Plan
+
+Source: the "Lakshmi Tex - Complete Website Redesign and Implementation" master brief (luxury school sportswear lookbook). Supersedes earlier visual directions where they conflict.
+
+### 5.1 Direction
+
+- Luxury fashion editorial lookbook for a custom school sportswear manufacturer (B2B, schools only). No e-commerce, no generic template look.
+- Palette: warm ivory #F4EFE7, champagne #DED1BF, taupe #A8947D, espresso #332B27, muted gold #B49A70, soft white #FFFCF8.
+- Type: Cormorant Garamond (serif display) + Manrope (secondary). Wide-tracked uppercase micro-labels, fine dividers, generous whitespace, asymmetric composition, minimal cards/gradients/rounded pills.
+- Imagery: no photography exists in the repo. Decision: labeled placeholder frames documenting the required asset (brief section 13 option 1). Existing generated product SVGs stay wired to the product images[] fields and are recoloured to the new palette.
+
+### 5.2 Decisions confirmed with the business (7 Nov 2026)
+
+1. Full restyle to ivory site-wide, including the products catalogue, product detail and sample-kit pages.
+2. This pass builds the 9-section homepage plus five new pages: /collections, /customization, /manufacturing, /about, /contact. All currently dead nav/footer links get fixed.
+3. New editorial imagery = labeled placeholder frames only (no new illustration work).
+
+### 5.3 Phase plan
+
+| Phase | Scope |
+| --- | --- |
+| R1 | Design system: palette + Cormorant/Manrope fonts in Tailwind, tokens, shared editorial primitives |
+| R2 | Global navigation (Home, Collections, Customization, Manufacturing, About, Contact + REQUEST SAMPLE KIT CTA), accessible mobile menu, footer with only live links |
+| R3 | Homepage sections 01-09 (editorial hero, collections, categories, featured product editorial, customization studio, fabric and finishing, manufacturing story, sample conversion, footer) |
+| R4 | Catalogue restyle: /products and /products/[slug] to ivory editorial; category filtering and sample CTAs preserved |
+| R5 | New pages: /collections (browse coordinated sets), /customization, /manufacturing, /about, /contact |
+| R6 | Sample Kit journey: visual restyle only; fields, validation, payload and API untouched |
+| R7 | Browser verification at 1440/1366/1024/768/390/375 px |
+| R8 | Production build, docs update, push |
+
+### 5.4 Guardrails
+
+- Do not invent products, categories, prices, certifications or factory claims. Only the 5 schema categories exist (T-shirt, Shorts, Track Pants, Sports Gown, Complete Kit); brief example categories are not used.
+- Do not touch the sample-kit form fields, validation, payload or /api/sample-kit logic.
+- Existing live routes (/ , /products, /products/[slug], /request-sample-kit, /sample-kit-thank-you, /styleguide) keep working; no URL is removed.
+- Every phase passes npm run build and browser verification before it is pushed.
+
+### 5.5 Verification results (7 Nov 2026)
+
+- `npx tsc --noEmit` green after every stage; final `npm run build` passes with 22 pages (17 pre-existing + 5 new routes).
+- Responsive: homepage and /products verified at 1440/1366/1024/768/390/375; all other routes at 1440/1024/768/390/375. Zero horizontal scroll, zero overflowing elements, hero h1 scales 73.6px -> 48px, Cormorant Garamond confirmed active in computed styles.
+- Console: zero errors/warnings on every tested route (one `loading` mismatch was traced to the test harness mutating img attributes, not the site).
+- Link integrity: every header/footer href returns 200; sitemap now lists only live routes.
+- Functional: category filter click syncs `?category=` and filters posters; mobile menu opens with 8 links and closes on Escape; `/request-sample-kit?product=slug` shows the read-only acknowledgement banner; `?intent=bulk` loads the form; empty-form submit is blocked by validation (22 fields, payload untouched).
+- Screenshots for review remain outstanding: the desktop browser window is hidden, so `browser.screenshot` refuses to capture. Capture once the window is brought to front.
+
+### 5.6 Open items
+
+1. Screenshots (above).
+2. Privacy/terms pages do not exist; footer legal links were removed rather than left broken. To be written as a follow-up.
+3. Photography: every intended photo slot is a labeled placeholder frame documenting the required asset (boys/girls full-body models, garment details, fabric/stitching close-ups, factory floor).
+4. Case-study section omitted (not part of brief section 6); testimonials/certifications remain unused because no verified content exists.

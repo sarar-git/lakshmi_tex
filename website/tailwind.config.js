@@ -8,10 +8,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        manrope: ["Manrope", "Inter", "system-ui", "sans-serif"],
+        // Editorial lookbook: Manrope is the secondary/body face everywhere
+        sans: ["Manrope", "system-ui", "sans-serif"],
+        manrope: ["Manrope", "system-ui", "sans-serif"],
+        // Primary editorial display face (serif)
+        cormorant: ["Cormorant Garamond", "Georgia", "serif"],
       },
       colors: {
+        // Editorial lookbook palette (Lakshmi Tex master brief)
+        ivory: "#F4EFE7",
+        champagne: "#DED1BF",
+        taupe: "#A8947D",
+        espresso: "#332B27",
+        gold: "#B49A70",
+        softwhite: "#FFFCF8",
         // Superly-inspired palette (sample request page)
         forest: "#245D32",
         deep: "#164A2A",
@@ -21,12 +31,14 @@ module.exports = {
         },
         navy: "#242044",
         light: "#D6D5D9",
-        // Editorial poster palette (products catalogue)
-        steel: "#8999A8",
-        mist: "#DCE4EB",
-        ink: "#172333",
-        graphite: "#687989",
-        haze: "#E4EAEF",
+        // Editorial poster palette — values now carry the luxury lookbook
+        // colours (master brief section 4); names kept so existing markup
+        // keeps working through the restyle.
+        steel: "#A8947D", // taupe
+        mist: "#F4EFE7", // warm ivory
+        ink: "#332B27", // espresso
+        graphite: "#5B5148", // deep warm grey (body copy on ivory)
+        haze: "#FFFCF8", // soft white
         // Original site tokens
         primary: {
           DEFAULT: "#0579eb",

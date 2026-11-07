@@ -96,7 +96,7 @@ export default function ProductDetail({ product, related }: ProductDetailProps) 
             <div className="relative aspect-[4/5] overflow-hidden border border-ink/10 bg-mist">
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute bottom-4 right-4 select-none text-[7rem] font-extrabold leading-none tracking-[-0.06em] text-ink/[0.06]"
+                className="pointer-events-none absolute bottom-4 right-4 select-none text-[7rem] font-cormorant font-semibold leading-none tracking-[-0.06em] text-ink/[0.06]"
               >
                 {product.category ? product.category.slice(0, 2).toUpperCase() : "PR"}
               </span>
@@ -110,7 +110,7 @@ export default function ProductDetail({ product, related }: ProductDetailProps) 
                   decoding="async"
                 />
               ) : (
-                <div className="relative flex h-full items-center justify-center text-5xl font-extrabold text-ink/20">
+                <div className="relative flex h-full items-center justify-center text-5xl font-cormorant font-semibold text-ink/20">
                   {product.name.slice(0, 2).toUpperCase()}
                 </div>
               )}
@@ -162,13 +162,13 @@ export default function ProductDetail({ product, related }: ProductDetailProps) 
                   </span>
                 )}
                 {categoryLabel && (
-                  <span className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-graphite">
+                  <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-graphite">
                     {categoryLabel}
                   </span>
                 )}
               </div>
 
-              <h1 className="mt-3 text-3xl font-extrabold uppercase leading-[1.02] tracking-tight text-ink lg:text-4xl">
+              <h1 className="mt-3 font-cormorant text-[2.4rem] font-semibold uppercase leading-[1.03] tracking-[0.01em] text-ink lg:text-[3rem]">
                 {product.name}
               </h1>
 
@@ -179,7 +179,7 @@ export default function ProductDetail({ product, related }: ProductDetailProps) 
               )}
 
               <div className="mt-6 flex items-center gap-3">
-                <span className="bg-ink px-3 py-1.5 text-[11px] font-extrabold tracking-[0.18em] text-white">
+                <span className="bg-ink px-3 py-1.5 text-[11px] font-semibold tracking-[0.2em] text-white">
                   {BULK_PRICING_LABEL}
                 </span>
               </div>
@@ -189,7 +189,7 @@ export default function ProductDetail({ product, related }: ProductDetailProps) 
               {/* Colours — image swaps only if a matching image exists */}
               {product.colours && product.colours.length > 0 && (
                 <div className="mt-7">
-                  <h2 className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-ink">
+                  <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-ink">
                     Colours
                   </h2>
                   <ul className="mt-3 flex flex-wrap gap-3" role="list">
@@ -224,7 +224,7 @@ export default function ProductDetail({ product, related }: ProductDetailProps) 
               {/* Sizes — only when present */}
               {product.sizes && product.sizes.length > 0 && (
                 <div className="mt-7">
-                  <h2 className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-ink">
+                  <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-ink">
                     Sizes
                   </h2>
                   <ul className="mt-3 flex flex-wrap gap-2" role="list">
@@ -244,13 +244,13 @@ export default function ProductDetail({ product, related }: ProductDetailProps) 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href={sampleHref}
-                  className="inline-flex flex-1 items-center justify-center bg-ink px-6 py-4 text-xs font-extrabold tracking-[0.16em] text-white transition-colors hover:bg-graphite focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
+                  className="inline-flex flex-1 items-center justify-center bg-ink px-6 py-4 text-[11px] font-bold tracking-[0.2em] text-white transition-colors hover:bg-graphite focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
                 >
                   REQUEST A SAMPLE
                 </a>
                 <a
                   href="/products"
-                  className="inline-flex flex-1 items-center justify-center border border-ink/40 px-6 py-4 text-xs font-extrabold tracking-[0.16em] text-ink transition-colors hover:bg-ink hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
+                  className="inline-flex flex-1 items-center justify-center border border-ink/40 px-6 py-4 text-[11px] font-bold tracking-[0.2em] text-ink transition-colors hover:bg-ink hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
                 >
                   BACK TO CATALOGUE
                 </a>
@@ -260,7 +260,7 @@ export default function ProductDetail({ product, related }: ProductDetailProps) 
             {/* Specs — only fields that actually exist */}
             {(product.gsm || product.moq || product.leadTime) && (
               <div className="border border-ink/10 bg-white p-6 lg:p-8">
-                <h2 className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-ink">
+                <h2 className="text-[11px] font-semibold uppercase tracking-[0.22em] text-ink">
                   Production details
                 </h2>
                 <dl className="mt-4 divide-y divide-ink/10 text-sm">
@@ -291,7 +291,7 @@ export default function ProductDetail({ product, related }: ProductDetailProps) 
         {/* ---------------- Complete the set ---------------- */}
         {related.length > 0 && (
           <section className="mt-16" aria-label="Related products">
-            <h2 className="text-[11px] font-extrabold uppercase tracking-[0.24em] text-graphite">
+            <h2 className="text-[11px] font-semibold uppercase tracking-[0.26em] text-graphite">
               Complete the set
             </h2>
             <div className="mt-5 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -302,14 +302,14 @@ export default function ProductDetail({ product, related }: ProductDetailProps) 
                   className="group block border border-ink/10 bg-white p-5 transition-colors hover:border-ink/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
                 >
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-graphite">
+                    <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-graphite">
                       {rel.category ? CATEGORY_COPY[rel.category].label : ""}
                     </span>
                   </div>
-                  <h3 className="mt-2 text-lg font-extrabold uppercase leading-tight tracking-tight text-ink">
+                  <h3 className="mt-2 font-cormorant text-xl font-semibold uppercase leading-tight tracking-normal text-ink">
                     {rel.name}
                   </h3>
-                  <span className="mt-3 inline-block text-[11px] font-extrabold tracking-[0.16em] text-ink underline decoration-ink/30 underline-offset-4 group-hover:decoration-ink">
+                  <span className="mt-3 inline-block text-[11px] font-bold tracking-[0.18em] text-ink underline decoration-ink/30 underline-offset-4 group-hover:decoration-ink">
                     VIEW PRODUCT
                   </span>
                 </a>

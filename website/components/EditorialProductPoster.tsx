@@ -75,7 +75,7 @@ function SizeRow({ product }: { product: Product }) {
 function BulkPricingChip({ light = false }: { light?: boolean }) {
   return (
     <span
-      className={`inline-block px-3 py-1.5 text-[11px] font-extrabold tracking-[0.18em] ${
+      className={`inline-block px-3 py-1.5 text-[11px] font-semibold tracking-[0.2em] ${
         light ? "bg-white text-ink" : "bg-ink text-white"
       }`}
     >
@@ -122,7 +122,7 @@ function CTARow({
     >
       <a
         href={sampleHref}
-        className={`inline-flex items-center justify-center whitespace-nowrap px-4 py-2.5 text-[11px] font-extrabold tracking-[0.14em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 ${
+        className={`inline-flex items-center justify-center whitespace-nowrap px-4 py-2.5 text-[11px] font-bold tracking-[0.18em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 ${
           light
             ? "bg-white text-ink hover:bg-mist"
             : "bg-ink text-white hover:bg-graphite"
@@ -132,7 +132,7 @@ function CTARow({
       </a>
       <a
         href={detailHref}
-        className={`inline-flex items-center justify-center whitespace-nowrap border px-4 py-2.5 text-[11px] font-extrabold tracking-[0.14em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 ${
+        className={`inline-flex items-center justify-center whitespace-nowrap border px-4 py-2.5 text-[11px] font-bold tracking-[0.18em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 ${
           light
             ? "border-white/70 text-white hover:bg-white hover:text-ink"
             : "border-ink/40 text-ink hover:bg-ink hover:text-white"
@@ -173,13 +173,13 @@ function InfoPanel({
       >
         {product.placeholder && <PlaceholderChip />}
         {categoryLabel && (
-          <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-graphite">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-graphite">
             {categoryLabel}
           </span>
         )}
       </div>
       <h3
-        className={`mt-2 font-extrabold uppercase leading-[1.03] tracking-tight text-ink ${
+        className={`mt-2 font-cormorant font-semibold uppercase leading-[1.02] tracking-[0.01em] text-ink ${
           compact ? "text-xl" : "text-2xl xl:text-[1.75rem]"
         }`}
       >
@@ -264,7 +264,7 @@ export function EditorialProductPoster({
   const decorative = (
     <span
       aria-hidden="true"
-      className={`pointer-events-none absolute select-none font-extrabold leading-none ${
+      className={`pointer-events-none absolute select-none font-cormorant font-semibold leading-none ${
         isDark ? "text-white/25" : "text-ink/[0.06]"
       }`}
       style={{ letterSpacing: "-0.05em" }}
@@ -284,7 +284,7 @@ export function EditorialProductPoster({
       decoding="async"
     />
   ) : (
-    <div className="flex h-full items-center justify-center text-6xl font-extrabold text-ink/20">
+    <div className="flex h-full items-center justify-center text-6xl font-cormorant font-semibold text-ink/20">
       {monogram}
     </div>
   );
@@ -313,7 +313,7 @@ export function EditorialProductPoster({
           <>
             <span
               aria-hidden="true"
-              className={`absolute left-5 top-5 z-10 text-[11px] font-extrabold tracking-[0.22em] ${
+              className={`absolute left-5 top-5 z-10 text-[11px] font-semibold tracking-[0.24em] ${
                 isDark ? "text-white/70" : "text-ink/50"
               }`}
             >
@@ -344,13 +344,13 @@ export function EditorialProductPoster({
           <>
             <span
               aria-hidden="true"
-              className="absolute right-5 top-5 z-10 text-[11px] font-extrabold tracking-[0.22em] text-ink/50"
+              className="absolute right-5 top-5 z-10 text-[11px] font-semibold tracking-[0.24em] text-ink/50"
             >
               {number}
             </span>
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute -left-6 top-[26%] z-0 select-none text-[16rem] font-extrabold leading-none tracking-[-0.06em] text-ink/[0.07]"
+              className="pointer-events-none absolute -left-6 top-[26%] z-0 select-none text-[16rem] font-cormorant font-semibold leading-none tracking-[-0.06em] text-ink/[0.07]"
             >
               {monogram}
             </span>
@@ -377,13 +377,13 @@ export function EditorialProductPoster({
           <>
             <span
               aria-hidden="true"
-              className="absolute left-5 top-5 z-10 text-[11px] font-extrabold tracking-[0.22em] text-ink/50"
+              className="absolute left-5 top-5 z-10 text-[11px] font-semibold tracking-[0.24em] text-ink/50"
             >
               {number}
             </span>
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute bottom-[8%] left-[38%] z-0 select-none text-[18rem] font-extrabold leading-none tracking-[-0.06em] text-ink/[0.07]"
+              className="pointer-events-none absolute bottom-[8%] left-[38%] z-0 select-none text-[18rem] font-cormorant font-semibold leading-none tracking-[-0.06em] text-ink/[0.07]"
             >
               {monogram}
             </span>
@@ -411,13 +411,13 @@ export function EditorialProductPoster({
           <>
             <span
               aria-hidden="true"
-              className="absolute left-5 top-5 z-20 text-[11px] font-extrabold tracking-[0.22em] text-white/80"
+              className="absolute left-5 top-5 z-20 text-[11px] font-semibold tracking-[0.24em] text-white/80"
             >
               {number}
             </span>
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute inset-x-0 top-[4%] z-0 select-none text-center text-[22rem] font-extrabold leading-none tracking-[-0.06em] text-white/25"
+              className="pointer-events-none absolute inset-x-0 top-[4%] z-0 select-none text-center text-[22rem] font-cormorant font-semibold leading-none tracking-[-0.06em] text-white/25"
             >
               {monogram}
             </span>
@@ -429,11 +429,11 @@ export function EditorialProductPoster({
               <div className="flex items-start justify-between gap-4">
                 <div>
                   {product.category && (
-                    <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-steel">
+                    <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-steel">
                       {CATEGORY_COPY[product.category].label}
                     </span>
                   )}
-                  <h3 className="mt-1 text-2xl font-extrabold uppercase leading-[1.05] tracking-tight">
+                  <h3 className="mt-1 font-cormorant text-[1.7rem] font-semibold uppercase leading-[1.05] tracking-normal">
                     {product.name}
                   </h3>
                 </div>
@@ -457,7 +457,7 @@ export function EditorialProductPoster({
 
       {/* ---------------- Mobile: recomposed single-column poster ----------- */}
       <div className="flex flex-col gap-4 p-5 md:hidden">
-        <div className="flex items-center justify-between text-[11px] font-extrabold tracking-[0.22em]">
+        <div className="flex items-center justify-between text-[11px] font-semibold tracking-[0.24em]">
           <span className={isDark ? "text-white/70" : "text-ink/50"}>{number}</span>
           <span className={isDark ? "text-white/80" : "text-graphite"}>
             {product.category ? CATEGORY_COPY[product.category].label : ""}
@@ -467,7 +467,7 @@ export function EditorialProductPoster({
         <div className="relative flex min-h-[300px] items-end justify-center overflow-hidden">
           <span
             aria-hidden="true"
-            className={`pointer-events-none absolute inset-0 flex select-none items-center justify-center text-[11rem] font-extrabold leading-none tracking-[-0.06em] ${
+            className={`pointer-events-none absolute inset-0 flex select-none items-center justify-center text-[11rem] font-cormorant font-semibold leading-none tracking-[-0.06em] ${
               isDark ? "text-white/25" : "text-ink/[0.07]"
             }`}
           >

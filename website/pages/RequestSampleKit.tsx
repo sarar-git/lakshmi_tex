@@ -7,10 +7,10 @@ import { useRouter } from "next/router";
 // ============================================================
 
 const inputClass =
-  "w-full border-0 border-b-2 border-light bg-transparent px-0 py-2.5 text-[15px] text-navy placeholder:text-navy/35 transition-colors focus:border-lime focus:outline-none";
+  "w-full border-0 border-b-2 border-champagne bg-transparent px-0 py-2.5 text-[15px] text-espresso placeholder:text-espresso/40 transition-colors focus:border-gold focus:outline-none";
 
 const labelClass =
-  "block text-[12px] font-medium tracking-wide text-navy/70 mb-1";
+  "block text-[12px] font-medium tracking-wide text-espresso/70 mb-1";
 
 export default function RequestSampleKit() {
   const router = useRouter();
@@ -60,15 +60,15 @@ export default function RequestSampleKit() {
   }
 
   return (
-    <main className="min-h-screen bg-deep p-0 lg:p-6">
+    <main className="min-h-screen bg-espresso p-0 lg:p-6">
       {/* ============================================================
-         Green canvas – deep forest gradient, rounded outer corners
+         Dark canvas – espresso gradient, sharp outer corners
          ============================================================ */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-forest via-forest to-deep lg:rounded-[32px]">
+      <div className="relative overflow-hidden bg-gradient-to-br from-espresso via-espresso to-black">
         {/* Decorative layered shapes */}
         <div
           aria-hidden
-          className="animate-float-soft pointer-events-none absolute -right-24 top-1/3 hidden h-72 w-72 rounded-full bg-lime/10 blur-2xl lg:block"
+          className="animate-float-soft pointer-events-none absolute -right-24 top-1/3 hidden h-72 w-72 rounded-full bg-gold/20 blur-2xl lg:block"
         />
         <div
           aria-hidden
@@ -81,21 +81,21 @@ export default function RequestSampleKit() {
              ============================================================ */}
           <aside className="flex w-full shrink-0 flex-col gap-6 p-6 sm:p-8 lg:w-[32%] lg:p-10">
             {/* Manufacturing credentials panel */}
-            <div className="animate-fade-in rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur-sm">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-lime">
+            <div className="animate-fade-in border border-white/15 bg-white/[0.06] p-6 backdrop-blur-sm">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-gold">
                 School Sportswear Manufacturing
               </p>
               <ul className="mt-4 space-y-3 text-[14px] leading-snug text-white/85">
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-lime" />
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
                   Custom Designs &amp; Branding
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-lime" />
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
                   Bulk Production Capability
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-lime" />
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
                   Quality-Assured Materials
                 </li>
               </ul>
@@ -114,7 +114,7 @@ export default function RequestSampleKit() {
           {/* ============================================================
              White floating interface
              ============================================================ */}
-          <section className="animate-panel-in relative w-full flex-1 bg-white px-6 pb-14 pt-8 sm:px-10 lg:rounded-tl-[48px] lg:px-14 lg:pb-16 lg:pt-12 xl:px-16">
+          <section className="animate-panel-in relative w-full flex-1 bg-softwhite px-6 pb-14 pt-8 sm:px-10 lg:px-14 lg:pb-16 lg:pt-12 xl:px-16">
             {/* Navigation */}
             <header className="relative flex items-center justify-between gap-4">
               <a href="/" className="flex items-center gap-3">
@@ -123,7 +123,7 @@ export default function RequestSampleKit() {
                   alt="School Sportswear"
                   className="h-9 w-9"
                 />
-                <span className="text-[15px] font-semibold tracking-tight text-navy">
+                <span className="text-[15px] font-semibold tracking-tight text-espresso">
                   School Sportswear
                 </span>
               </a>
@@ -131,19 +131,19 @@ export default function RequestSampleKit() {
               <nav className="hidden items-center gap-7 md:flex">
                 <a
                   href="/"
-                  className="text-[13px] font-medium text-navy/70 transition-colors hover:text-forest"
+                  className="text-[13px] font-medium text-espresso/70 transition-colors hover:text-gold"
                 >
                   Home
                 </a>
                 <a
                   href="/request-sample-kit"
-                  className="text-[13px] font-medium text-navy/70 transition-colors hover:text-forest"
+                  className="text-[13px] font-medium text-espresso/70 transition-colors hover:text-gold"
                 >
                   Sample Kit
                 </a>
                 <a
                   href="/request-sample-kit"
-                  className="rounded-full bg-navy px-5 py-2.5 text-[12px] font-semibold text-white transition-colors hover:bg-forest"
+                  className="bg-espresso px-5 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-softwhite transition-colors hover:bg-black"
                 >
                   Request Sample
                 </a>
@@ -154,25 +154,25 @@ export default function RequestSampleKit() {
                 aria-label="Open menu"
                 aria-expanded={menuOpen}
                 onClick={() => setMenuOpen((v) => !v)}
-                className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-full border border-light md:hidden"
+                className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 border border-champagne md:hidden"
               >
-                <span className="block h-0.5 w-4 bg-navy" />
-                <span className="block h-0.5 w-4 bg-navy" />
-                <span className="block h-0.5 w-4 bg-navy" />
+                <span className="block h-0.5 w-4 bg-espresso" />
+                <span className="block h-0.5 w-4 bg-espresso" />
+                <span className="block h-0.5 w-4 bg-espresso" />
               </button>
 
               {menuOpen && (
-                <nav className="absolute right-0 top-12 z-30 flex flex-col gap-4 rounded-2xl border border-light bg-white p-5 shadow-lg md:hidden">
+                <nav className="absolute right-0 top-12 z-30 flex flex-col gap-4 border border-champagne bg-softwhite p-5 shadow-lg md:hidden">
                   <a
                     href="/"
-                    className="text-[14px] font-medium text-navy"
+                    className="text-[14px] font-medium text-espresso"
                     onClick={() => setMenuOpen(false)}
                   >
                     Home
                   </a>
                   <a
                     href="/request-sample-kit"
-                    className="text-[14px] font-medium text-navy"
+                    className="text-[14px] font-medium text-espresso"
                     onClick={() => setMenuOpen(false)}
                   >
                     Sample Kit
@@ -182,10 +182,10 @@ export default function RequestSampleKit() {
             </header>
 
             {/* Main heading – oversized editorial typography */}
-            <h1 className="mt-10 max-w-[560px] text-[36px] font-normal leading-[1.06] tracking-tight text-navy sm:text-[42px] lg:text-[46px]">
+            <h1 className="mt-10 max-w-[560px] font-cormorant text-[42px] font-medium leading-[1.04] tracking-normal text-espresso sm:text-[50px] lg:text-[58px]">
               Let&apos;s create your school&apos;s sportswear.
             </h1>
-            <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-navy/70">
+            <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-espresso/70">
               Tell us what your institution needs. We&apos;ll help you explore
               the right fabrics, designs and customisation options.
             </p>
@@ -193,7 +193,7 @@ export default function RequestSampleKit() {
             {/* Read-only acknowledgement of the product passed from /products */}
             {requestedProduct && (
               <p
-                className="mt-6 inline-block rounded-full bg-lime/20 px-4 py-2 text-[13px] font-medium text-navy"
+                className="mt-6 inline-block bg-champagne/60 px-4 py-2 text-[13px] font-medium text-espresso"
                 role="status"
               >
                 Sample request for:{" "}
@@ -203,51 +203,51 @@ export default function RequestSampleKit() {
               </p>
             )}
 
-            <hr className="mt-10 border-t border-light" />
+            <hr className="mt-10 border-t border-champagne" />
 
             {/* Three information blocks */}
             <div className="mt-8 grid gap-8 sm:grid-cols-3">
               <div>
-                <span aria-hidden className="mb-3 block h-1 w-10 bg-lime" />
-                <h2 className="text-[13px] font-semibold uppercase tracking-[0.1em] text-navy">
+                <span aria-hidden className="mb-3 block h-1 w-10 bg-gold" />
+                <h2 className="text-[13px] font-semibold uppercase tracking-[0.1em] text-espresso">
                   Custom School Uniforms
                 </h2>
-                <p className="mt-2 text-[13px] leading-relaxed text-navy/60">
+                <p className="mt-2 text-[13px] leading-relaxed text-espresso/60">
                   Purpose-built sportswear for schools and educational
                   institutions.
                 </p>
               </div>
               <div>
-                <span aria-hidden className="mb-3 block h-1 w-10 bg-lime" />
-                <h2 className="text-[13px] font-semibold uppercase tracking-[0.1em] text-navy">
+                <span aria-hidden className="mb-3 block h-1 w-10 bg-gold" />
+                <h2 className="text-[13px] font-semibold uppercase tracking-[0.1em] text-espresso">
                   Design &amp; Customization
                 </h2>
-                <p className="mt-2 text-[13px] leading-relaxed text-navy/60">
+                <p className="mt-2 text-[13px] leading-relaxed text-espresso/60">
                   Explore colours, logos, patterns and personalized uniforms.
                 </p>
               </div>
               <div>
-                <span aria-hidden className="mb-3 block h-1 w-10 bg-lime" />
-                <h2 className="text-[13px] font-semibold uppercase tracking-[0.1em] text-navy">
+                <span aria-hidden className="mb-3 block h-1 w-10 bg-gold" />
+                <h2 className="text-[13px] font-semibold uppercase tracking-[0.1em] text-espresso">
                   Sample Request
                 </h2>
-                <p className="mt-2 text-[13px] leading-relaxed text-navy/60">
+                <p className="mt-2 text-[13px] leading-relaxed text-espresso/60">
                   Submit your requirements to initiate the sample development
                   process.
                 </p>
               </div>
             </div>
 
-            <hr className="mt-10 border-t border-light" />
+            <hr className="mt-10 border-t border-champagne" />
 
             {/* Form + portrait photograph */}
             <div className="mt-10 grid gap-10 xl:grid-cols-[minmax(0,1fr)_280px] xl:gap-10">
               <div>
                 {/* Form heading */}
-                <h2 className="text-[30px] font-normal leading-tight tracking-tight text-navy lg:text-[36px]">
+                <h2 className="font-cormorant text-[32px] font-medium leading-tight tracking-normal text-espresso lg:text-[42px]">
                   Request Your Sample
                 </h2>
-                <p className="mt-3 max-w-lg text-[14px] leading-relaxed text-navy/70">
+                <p className="mt-3 max-w-lg text-[14px] leading-relaxed text-espresso/70">
                   Share your requirements and let us understand the sportswear
                   your institution is looking for.
                 </p>
@@ -354,39 +354,39 @@ export default function RequestSampleKit() {
                       Items you&apos;re interested in
                     </legend>
                     <div className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-4">
-                      <label className="flex cursor-pointer items-center gap-2 text-[14px] text-navy">
+                      <label className="flex cursor-pointer items-center gap-2 text-[14px] text-espresso">
                         <input
                           type="checkbox"
                           name="itemsInterested"
                           value="T‑shirt"
-                          className="h-4 w-4 cursor-pointer accent-forest"
+                          className="h-4 w-4 cursor-pointer accent-espresso"
                         />
                         T‑shirt
                       </label>
-                      <label className="flex cursor-pointer items-center gap-2 text-[14px] text-navy">
+                      <label className="flex cursor-pointer items-center gap-2 text-[14px] text-espresso">
                         <input
                           type="checkbox"
                           name="itemsInterested"
                           value="Shorts"
-                          className="h-4 w-4 cursor-pointer accent-forest"
+                          className="h-4 w-4 cursor-pointer accent-espresso"
                         />
                         Shorts
                       </label>
-                      <label className="flex cursor-pointer items-center gap-2 text-[14px] text-navy">
+                      <label className="flex cursor-pointer items-center gap-2 text-[14px] text-espresso">
                         <input
                           type="checkbox"
                           name="itemsInterested"
                           value="Track Pants"
-                          className="h-4 w-4 cursor-pointer accent-forest"
+                          className="h-4 w-4 cursor-pointer accent-espresso"
                         />
                         Track Pants
                       </label>
-                      <label className="flex cursor-pointer items-center gap-2 text-[14px] text-navy">
+                      <label className="flex cursor-pointer items-center gap-2 text-[14px] text-espresso">
                         <input
                           type="checkbox"
                           name="itemsInterested"
                           value="Sports Gown"
-                          className="h-4 w-4 cursor-pointer accent-forest"
+                          className="h-4 w-4 cursor-pointer accent-espresso"
                         />
                         Sports Gown
                       </label>
@@ -440,12 +440,12 @@ export default function RequestSampleKit() {
                   <input type="hidden" name="city" value="" />
                   <input type="hidden" name="board" value="" />
 
-                  {/* Pill-shaped lime CTA */}
+                  {/* Primary CTA */}
                   <div className="md:col-span-2">
                     <button
                       type="submit"
                       disabled={loading}
-                      className="inline-flex w-full items-center justify-center rounded-full bg-lime px-10 py-3.5 text-[14px] font-semibold tracking-wide text-navy transition-colors hover:bg-lime-dark focus:outline-none focus:ring-2 focus:ring-forest focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+                      className="inline-flex w-full items-center justify-center bg-espresso px-10 py-4 text-[12px] font-bold uppercase tracking-[0.2em] text-softwhite transition-colors hover:bg-black focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
                     >
                       {loading ? "Sending…" : "Request My Sample"}
                     </button>
@@ -458,7 +458,7 @@ export default function RequestSampleKit() {
               </div>
 
               {/* Right-side portrait photograph */}
-              <figure className="max-w-[360px] self-start overflow-hidden rounded-t-[140px] rounded-b-2xl border border-light bg-bg-light xl:max-w-none">
+              <figure className="max-w-[360px] self-start overflow-hidden border border-champagne bg-ivory xl:max-w-none">
                 <img
                   src="/school-uniform-collection.svg"
                   alt="Matching school sportswear collection — jersey, shorts and track pants"
@@ -476,9 +476,9 @@ export default function RequestSampleKit() {
 // Inline thank‑you component shown after successful submission
 function ThankYouInline() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-bg-light">
+    <main className="min-h-screen flex items-center justify-center bg-ivory">
       <section className="py-12 text-center">
-        <h1 className="text-4xl font-bold text-primary">Thank you!</h1>
+        <h1 className="text-4xl font-bold text-espresso">Thank you!</h1>
         <p>
           Your sample‑kit request has been received. We&apos;ll send a physical
           kit to the address you provided within 5‑7 business days.

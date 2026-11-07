@@ -6,9 +6,9 @@ export default function SampleKitThankYou() {
   const params = useSearchParams();
   const leadId = params.get("lead");
   return (
-    <main className="min-h-screen flex items-center justify-center bg-bg-light">
+    <main className="min-h-screen flex items-center justify-center bg-ivory">
       <section className="py-12 text-center">
-        <h1 className="text-4xl font-bold text-primary">Thank you!</h1>
+        <h1 className="text-4xl font-bold text-espresso">Thank you!</h1>
         <p>
           Your sample‑kit request has been received (Lead ID: <strong>{leadId}</strong>).
         </p>

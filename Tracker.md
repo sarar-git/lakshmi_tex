@@ -185,3 +185,20 @@ Update the status and dates here as work moves, and tick the checklist items as 
 | 1 Nov 2026 | Requirements, tech stack, sitemap and phase plan written; tracker created; B1 Foundation scaffold completed (Next.js, Tailwind, Payload, CI, .env.example) | None | B2 Design system – design tokens, core components, styleguide page |
 | 2 Nov 2026 | B2 Design system completed – design tokens, core components (Button, Card, Section, Hero, LogoStrip), styleguide page built and verified | None | B3 Data model and CMS – Payload CMS config + collections |
 | 3 Nov 2026 | B3 Data model and CMS completed – Payload CMS config + 10 collections (Products, Schools, Case Studies, Testimonials, FAQs, Certifications, Region/City, Blog Posts, Leads, Site Settings). Roles: admin, content editor, sales. Draft/published states. Seed script placeholder added. | None | B4 Public pages – Home page built with design tokens and core components; next: product listing and request‑sample page |
+
+## Editorial redesign (Nov 2026, master brief)
+
+| Phase | Status | Done date | Notes |
+| --- | --- | --- | --- |
+| R1 Design system (ivory palette, Cormorant + Manrope) | Done | 7 Nov 2026 | Tailwind tokens + remapped industrial tokens; tokens.css vars; `components/editorial.tsx` primitives (Eyebrow, EditorialHeading, Rule, DecorativeLetter, ImageFrame, Primary/SecondaryCTA) |
+| R2 Navigation and footer | Done | 7 Nov 2026 | Header: Lakshmi Tex wordmark, 7 live links, REQUEST SAMPLE KIT CTA, accessible mobile dialog (Escape closes). Footer: espresso, live links only. All header/footer hrefs fetch 200 |
+| R3 Homepage sections 01-09 | Done | 7 Nov 2026 | `components/home.tsx` rewritten; index.tsx loads products via getStaticProps (revalidate 3600); verified 8 rendered sections (09 = footer) |
+| R4 Catalogue restyle (/products, /products/[slug]) | Done | 7 Nov 2026 | Token remap kept all class names; serif headings on poster/catalogue/detail; 9 posters, 2-col/1-col responsive, 0 broken images |
+| R5 New pages (collections, customization, manufacturing, about, contact) | Done | 7 Nov 2026 | All five routes live; /collections data-driven from `lib/collections.ts` (4 collections = groupings of the 5 real categories); sitemap lists only live routes |
+| R6 Sample Kit journey connect | Done | 7 Nov 2026 | Visual restyle only (class replacements). Form untouched: 22 fields, 3 required, empty submit blocked by validation, payload/API unchanged. `?product=` acknowledgement verified; `?intent=bulk` loads (never consumed by form, same as before) |
+| R7 Responsive verification (1440/1366/1024/768/390/375) | Done | 7 Nov 2026 | All routes pass: 0 horizontal scroll, 0 overflowers, Cormorant h1 responsive (73.6→48px), 0 console errors (one harness-induced warning fixed). Functional: category filter → `?category=`, mobile menu open/Escape, `?product=` banner. Screenshots still pending (desktop window hidden) |
+| R8 Production build, docs, push | Done | 7 Nov 2026 | `npm run build` passes with 22 pages (5 new routes added); Plan/Process/Tracker updated; committed and pushed |
+
+Open items after this pass: screenshots for review (needs visible desktop browser window); privacy/terms pages (links removed from footer because they 404 — logged); case-study section dropped (not in brief section 6); photography still placeholder frames.
+
+Decisions confirmed 7 Nov 2026: full ivory restyle site-wide; homepage + 5 new pages this pass; labeled placeholder frames for imagery.

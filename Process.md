@@ -338,3 +338,18 @@ Ship each as a separate release, in this order of value:
 2. Start the content and photo/video shoot plan
 3. Choose the model provider in OpenCode and begin B1
 4. Define the tracking plan and create all marketing accounts under company ownership
+
+## 6. Editorial Redesign Execution (7 Nov 2026)
+
+Stages run for the master-brief redesign (phases R1-R8 in the Plan tab):
+
+1. **Design system first** - added the ivory/champagne editorial palette and Cormorant Garamond to Tailwind, remapped the existing industrial token names (steel/mist/ink/graphite/haze) to editorial values so old markup restyled without mass edits, then built shared primitives in `components/editorial.tsx`.
+2. **Global chrome** - rewrote navigation and footer to the editorial style with only links that resolve to real pages; accessible mobile dialog menu (aria-expanded, Escape to close).
+3. **Homepage** - rebuilt as the nine brief sections in `components/home.tsx`; `pages/index.tsx` now loads the real catalogue via getStaticProps for the featured-product editorial.
+4. **Catalogue restyle** - serif typography + token remap across poster/catalogue/detail components; filtering and sample CTAs untouched.
+5. **New pages** - /collections (data-driven from `lib/collections.ts`), /customization, /manufacturing, /about, /contact; sitemap rewritten to live routes only.
+6. **Sample Kit** - className-only replacements in the form page; fields, validation, submit handler, payload and API never edited (re-verified: 22 fields, required-field blocking works).
+7. **Verification** - served the site through a temporary viewport harness (`public/__viewport-harness.html`, same-origin iframe pinned to each test width) and drove it with the browser tools: six widths per route for horizontal scroll/overflow, computed-style checks for the serif face, console error reads, link fetches, and click tests for the category filter, mobile menu and product acknowledgement. Harness deleted after use.
+8. **Build and push** - `npm run build` (22 pages) green; docs updated; changes committed and pushed per phase rule.
+
+PowerShell note: no `&&` chaining - separate commands or `;` are used for sequential steps.
